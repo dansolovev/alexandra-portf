@@ -1,0 +1,39 @@
+.about {
+    padding: 120px 0;
+    &__grid {
+        display: grid;
+        grid-template: 600px / 400px 570px;
+        gap: 0 70px;
+    }
+    &__img img {
+        width: 100%;
+    }
+    &__block {
+        padding-top: 6px;
+    }
+    &__subtitle {
+        position: relative;
+        z-index: 2;
+        left: 12px;
+        @include before_circle;
+    }
+    &__title {
+        position: relative;
+        z-index: 2;
+        @include divider;
+    }
+    &__text {
+        margin-top: 24px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__wrapper {
+        margin-top: 40px;
+        width: 574px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}

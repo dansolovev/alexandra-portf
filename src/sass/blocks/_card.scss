@@ -1,0 +1,21 @@
+.card {
+    position: relative;
+    z-index: 2;
+    left: 12px;
+    @include before_circle_card;
+    display: flex;
+    width: 260px;
+    min-height: 116px;
+    &__logo {
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    &__text {
+        width: 200px;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
